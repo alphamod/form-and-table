@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form & Table</title>
+</head>
+<body>
+    <div class="formWindow">
+        <form action="">
+            <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="cName" placeholder="Enter your Name">
+        </div>
+            <br>
+            <div>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="cAge" placeholder="Enter the age">
+        </div>
+        <br>
+        <div>
+            <label for="nation">Nationality: </label>
+            <select name="nation" id="cNation">
+                <option value="" selected>----Select a Country----</option>
+                <option value="IND">India</option>
+                <option value="US">USA</option>
+                <option value="CND">Canada</option>
+                <option value="GR">German</option>
+            </select>
+            <label for="state">State: </label>
+            <select name="state" id="cState">
+                <option value="" selected>----Select a State----</option>
+                <option value="ST1">State 1</option>
+                <option value="ST2">State 2</option>
+                <option value="ST3">State 3</option>
+                <option value="ST4">State 4</option>
+            </select><br><br>
+            <label for="city">City: </label>
+            <select name="city" id="cCity">
+                <option value="" selected>----Select a City----</option>
+                <option value="CT1">City 1</option>
+                <option value="CT2">City 2</option>
+                <option value="CT3">City 3</option>
+                <option value="CT4">City 4</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender: </label>
+            <input type="radio" id="cGender" value="Male" name="gender">Male
+            <input type="radio" id="cGender" value="Female" name="gender">Female
+        </div>            
+        <br>
+        <div>
+            <label for="ms">Marital Status: </label>
+            <input type="radio" id="cMStatus" name="ms"value="married">Married
+            <input type="radio" id="cMStatus" name="ms" value="Unmarried">Unmarried
+        </div>
+        <br>
+        <div>
+            <label for="skills">Skills: </label>
+            <input type="checkbox" value="html" id="cSkill" name="skills[]">HTML
+            <input type="checkbox" value="php" id="cSkill" name="skills[]">PHP
+            <input type="checkbox" value="css" id="cSkill" name="skills[]">CSS
+            <input type="checkbox" value="js" id="cSkill" name="skills[]">JavaScript
+        </div>
+        <br>
+        <div class="about">
+            <label for="about">Tell About Yourself: </label>
+            <br>
+            <textarea name="about" id="cAbout" placeholder="write about yourself in 300 words."></textarea>
+            <br>
+        </div>
+        <div class="submit">
+            <input type="button" value="Submit" onclick="addData();return false">
+        </div>
+        </form>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Nationality</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Gender</th>
+                    <th>Marital Status</th>
+                    <th>Skills</th>
+                    <th>About</th>
+                </tr>
+            </thead>
+        <tbody ID="tableBody">
+
+        </tbody>
+    </table>
+    </div>
+    <div></div>
+    <script src="./script.js"></script>
+</body>
+</html>
